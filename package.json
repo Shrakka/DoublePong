@@ -1,0 +1,17 @@
+{
+  "name": "pixi_3",
+  "version": "1.0.0",
+  "description": "Simple Game With Typescript and PIXI",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd dist && live-server",
+    "start": "tsc --watch",
+    "compile": "tsc"
+  },
+  "author": "Enzo TESTA",
+  "license": "ISC",
+  "dependencies": {
+    "@types/pixi.js": "^4.5.0",
+    "pixi.js": "^4.5.3"
+  }
+}

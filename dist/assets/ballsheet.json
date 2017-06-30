@@ -1,0 +1,44 @@
+{"frames": {
+
+"ball0.png":
+{
+	"frame": {"x":0,"y":0,"w":30,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+	"sourceSize": {"w":30,"h":30}
+},
+"ball1.png":
+{
+	"frame": {"x":30,"y":0,"w":30,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+	"sourceSize": {"w":30,"h":30}
+},
+"ball2.png":
+{
+	"frame": {"x":60,"y":0,"w":30,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+	"sourceSize": {"w":30,"h":30}
+},
+"ball3.png":
+{
+	"frame": {"x":90,"y":0,"w":30,"h":30},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+	"sourceSize": {"w":30,"h":30}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "ballsheet.png",
+	"format": "RGBA8888",
+	"size": {"w":120,"h":30},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7ba29027a66ecaa030a713ce2d6f6c3a:e113e78dfda6817eae2ccffe07f668f8:7c65e60e7c8eaea41a4867f898600fe3$"
+}
+}
