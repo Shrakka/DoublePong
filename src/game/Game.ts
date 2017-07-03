@@ -27,6 +27,10 @@ export default class Game extends PIXI.Application {
     // THE BALL
     public ball: Ball;
     
+    // THE SOUNDS
+    public ping: Howl;
+
+
     // Can be interesting
     //public interactionManager: PIXI.interaction.InteractionManager;
 
@@ -45,8 +49,8 @@ export default class Game extends PIXI.Application {
 
         // Start loading the assets
         this._loader.loadAssets(); 
-        const foo = PIXI.sound.Sound.from("../assets/ping.wav");
-        foo.play();
+     //   const foo = PIXI.sound.Sound.from("../assets/ping.wav");
+     //   foo.play();
        // sound.add("ping", "../assets/ping.wav")
     }
 
@@ -65,6 +69,12 @@ export default class Game extends PIXI.Application {
 
         this.upSlideBar = new AISlideBar(200,40, 'horizontal','computer', this._loader.slideBarTexture, this.ball);
         this.leftSlideBar = new AISlideBar(200,40, 'vertical','computer', this._loader.slideBarTexture, this.ball);
+
+
+        // SOUNDS
+        this.ping = new Howl({src: ['../assets/ping.wav']})
+        this.ping.play();
+
 
         this.stage.addChild(this.bottomSlideBar);
         this.stage.addChild(this.rightSlideBar);

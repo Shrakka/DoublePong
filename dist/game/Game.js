@@ -25,9 +25,9 @@ define(["require", "exports", "./SlideBar", "./AISlideBar", "./Manager", "./Game
             _this._loader = new GameLoader_1.default(_this);
             // Start loading the assets
             _this._loader.loadAssets();
-            var foo = PIXI.sound.Sound.from("../assets/ping.wav");
-            foo.play();
             return _this;
+            //   const foo = PIXI.sound.Sound.from("../assets/ping.wav");
+            //   foo.play();
             // sound.add("ping", "../assets/ping.wav")
         }
         // ------------------------------------------------------------------------------------------------------------------
@@ -42,6 +42,9 @@ define(["require", "exports", "./SlideBar", "./AISlideBar", "./Manager", "./Game
             //this.ball.interactive = true;
             this.upSlideBar = new AISlideBar_1.default(200, 40, 'horizontal', 'computer', this._loader.slideBarTexture, this.ball);
             this.leftSlideBar = new AISlideBar_1.default(200, 40, 'vertical', 'computer', this._loader.slideBarTexture, this.ball);
+            // SOUNDS
+            this.ping = new Howl({ src: ['../assets/ping.wav'] });
+            this.ping.play();
             this.stage.addChild(this.bottomSlideBar);
             this.stage.addChild(this.rightSlideBar);
             this.stage.addChild(this.ball);
