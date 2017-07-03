@@ -1,0 +1,32 @@
+import Sound from "./Sound";
+export default class SoundInstance extends PIXI.utils.EventEmitter {
+    private static _pool;
+    id: number;
+    private _parent;
+    private _paused;
+    private _lastUpdate;
+    private _elapsed;
+    private _fadeIn;
+    private _fadeOut;
+    private _speed;
+    private _end;
+    private _loop;
+    private _duration;
+    private _progress;
+    private _source;
+    static create(parent: Sound): SoundInstance;
+    constructor(parent: Sound);
+    stop(): void;
+    play(start: number, end: number, speed: number, loop: boolean, fadeIn: number, fadeOut: number): void;
+    private _toSec(time?);
+    private _enabled;
+    readonly progress: number;
+    paused: boolean;
+    destroy(): void;
+    toString(): string;
+    private _now();
+    private _update(force?);
+    private _init(parent);
+    private _internalStop();
+    private _onComplete();
+}

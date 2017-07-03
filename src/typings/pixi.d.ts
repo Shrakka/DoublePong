@@ -14,4 +14,5 @@ declare namespace PIXI {
         
     }
 
-}
+
+} 

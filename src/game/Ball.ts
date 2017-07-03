@@ -9,7 +9,6 @@ export default class Ball extends PIXI.Sprite {
     }
 
 
-
     public move(): void {        
         this.position.set(this.position.x+ this.speed * Math.cos(this.direction), this.position.y - this.speed * Math.sin(this.direction))
     }

@@ -25,7 +25,10 @@ define(["require", "exports", "./SlideBar", "./AISlideBar", "./Manager", "./Game
             _this._loader = new GameLoader_1.default(_this);
             // Start loading the assets
             _this._loader.loadAssets();
+            var foo = PIXI.sound.Sound.from("../assets/ping.wav");
+            foo.play();
             return _this;
+            // sound.add("ping", "../assets/ping.wav")
         }
         // ------------------------------------------------------------------------------------------------------------------
         Game.prototype.init = function () {

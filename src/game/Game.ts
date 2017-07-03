@@ -5,6 +5,7 @@ import anim from './Ball'
 import GameLoader from './GameLoader'
 import Ball from './Ball'
 
+
 export default class Game extends PIXI.Application {
 
     // Game name
@@ -44,6 +45,9 @@ export default class Game extends PIXI.Application {
 
         // Start loading the assets
         this._loader.loadAssets(); 
+        const foo = PIXI.sound.Sound.from("../assets/ping.wav");
+        foo.play();
+       // sound.add("ping", "../assets/ping.wav")
     }
 
 // ------------------------------------------------------------------------------------------------------------------
