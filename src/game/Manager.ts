@@ -47,6 +47,11 @@ export default class Manager {
         this.game.upSlideBar.position.x = this.game.bottomSlideBar.position.x * size / lastSize
         this.game.leftSlideBar.position.y = this.game.rightSlideBar.position.y * size / lastSize
 
+        // Background stuff
+        this.game.background.position.set(0,0);
+        this.game.background.height = size;
+        this.game.background.width = size;
+
         // Resize ball
         //this.game.ball.position.set(this.game.ball.position.x * size / lastSize, this.game.ball.position.y * size / lastSize)
 

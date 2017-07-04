@@ -32,19 +32,22 @@ define(["require", "exports", "./SlideBar", "./AISlideBar", "./Manager", "./Game
         }
         // ------------------------------------------------------------------------------------------------------------------
         Game.prototype.init = function () {
+            // Setup background
             this.renderer.backgroundColor = 0xFF00FF;
             this.renderer.autoResize = true;
+            this.background = new PIXI.Sprite(this._loader.background);
             this.bottomSlideBar = new SlideBar_1.default(40, 40, 'horizontal', 'human', this._loader.slideBarTexture);
             this.rightSlideBar = new SlideBar_1.default(200, 200, 'vertical', 'human', this._loader.slideBarTexture);
-            this.ball = new Ball_1.default(this._loader.ballTexture);
+            this.ball = new Ball_1.default(this._loader.ballTextures[1]);
             // Could be interesting
             //this.interactionManager = new PIXI.interaction.InteractionManager(this.renderer);
             //this.ball.interactive = true;
-            this.upSlideBar = new AISlideBar_1.default(200, 40, 'horizontal', 'computer', this._loader.slideBarTexture, this.ball);
-            this.leftSlideBar = new AISlideBar_1.default(200, 40, 'vertical', 'computer', this._loader.slideBarTexture, this.ball);
+            this.upSlideBar = new AISlideBar_1.default(200, 40, 'horizontal', 'computer', this._loader.ennemiSlideBar, this.ball);
+            this.leftSlideBar = new AISlideBar_1.default(200, 40, 'vertical', 'computer', this._loader.ennemiSlideBar, this.ball);
             // SOUNDS
             this.ping = new Howl({ src: ['../assets/ping.wav'] });
             this.ping.play();
+            this.stage.addChild(this.background);
             this.stage.addChild(this.bottomSlideBar);
             this.stage.addChild(this.rightSlideBar);
             this.stage.addChild(this.ball);
@@ -70,9 +73,9 @@ define(["require", "exports", "./SlideBar", "./AISlideBar", "./Manager", "./Game
             this.upSlideBar.move();
             this.leftSlideBar.move();
             // Check for collision
-            if (!this.ballIsSafe()) {
-                this.collide();
-            }
+            //   if(!this.ballIsSafe()) {
+            this.collide();
+            //   }
             if (this.winner() !== 0) {
                 this.gameOver = true;
             }
@@ -86,21 +89,25 @@ define(["require", "exports", "./SlideBar", "./AISlideBar", "./Manager", "./Game
             if (this.rightSlideBar.containsPoint(this.ball.getCorners()[1]) || this.rightSlideBar.containsPoint(this.ball.getCorners()[2])) {
                 this.ball.direction = this.newDirection("right");
                 collide = true;
+                this.ping.play();
             }
             // CHECKING BOTTOM COLLISION
             if (this.bottomSlideBar.containsPoint(this.ball.getCorners()[2]) || this.bottomSlideBar.containsPoint(this.ball.getCorners()[3])) {
                 this.ball.direction = this.newDirection("bottom");
                 collide = true;
+                this.ping.play();
             }
             // CHECKING TOP COLLISION
             if (this.upSlideBar.containsPoint(this.ball.getCorners()[0]) || this.upSlideBar.containsPoint(this.ball.getCorners()[1])) {
                 this.ball.direction = this.newDirection("top");
                 collide = true;
+                this.ping.play();
             }
             // CHECKING LEFT COLLISION
             if (this.leftSlideBar.containsPoint(this.ball.getCorners()[0]) || this.leftSlideBar.containsPoint(this.ball.getCorners()[3])) {
                 this.ball.direction = this.newDirection("left");
                 collide = true;
+                this.ping.play();
             }
             return collide;
         };

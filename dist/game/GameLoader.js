@@ -17,17 +17,26 @@ define(["require", "exports"], function (require, exports) {
             var _this = _super.call(this) || this;
             _this.onAssetsLoaded = function (loader, resources) {
                 // Create textures
-                _this.ballTexture = resources["ballsheet"].textures["ball1.png"];
+                //this.ballTextures.push((resources as any)["trumpsheet"].textures["trump0.png"]);
+                _this.ballTextures.push(resources["ballsheet"].textures["ball0.png"]);
+                _this.ballTextures.push(resources["trumpface"].texture);
+                _this.ennemiSlideBar = resources["ennemybar"].texture;
                 _this.slideBarTexture = resources["slidebar"].texture;
+                _this.background = resources["background"].texture;
                 _this.game.init();
             };
             _this.game = game;
+            _this.ballTextures = [];
             return _this;
         }
         GameLoader.prototype.loadAssets = function () {
-            this.add('slidebar', '../assets/blank.png');
+            this.add('slidebar', '../assets/burgerXLB.png');
+            this.add('ennemybar', '../assets/communist.png');
+            //  this.add('trumpsheet', '../assets/trumpsheet.json');
             this.add('ballsheet', '../assets/ballsheet.json');
+            this.add('background', '../assets/background.jpg');
             this.onProgress.add(function () { console.log("1 asset loaded"); });
+            this.add('trumpface', '../assets/trumpface.png');
             this.once('complete', this.onAssetsLoaded);
             this.load();
         };
