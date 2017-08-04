@@ -2,13 +2,13 @@
 DoublePong Game based on Phaser and Typescript
 
 
-![Menu][./gameMenu.png]
+![Menu][gameMenu.png]
 
 ---
 
 ## Tools
 
-* Based on this amazing <a href='http://rroylance.github.io/phaser-npm-webpack-typescript-starter-project/'>Boilerplate</a by Rroylance
+* Based on this amazing <a href='http://rroylance.github.io/phaser-npm-webpack-typescript-starter-project/'>Boilerplate</a>
 
 It includes :
 	- NPM
