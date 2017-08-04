@@ -1,0 +1,160 @@
+{
+    "frames": [
+        {
+            "frame": {
+                "y": 0, 
+                "x": 0, 
+                "w": 156, 
+                "h": 200
+            }, 
+            "rotated": false, 
+            "filename": "trump7.png", 
+            "trimmed": false, 
+            "sourceSize": {
+                "h": 200, 
+                "w": 156
+            }, 
+            "spriteSourceSize": {
+                "y": 0, 
+                "x": 0, 
+                "w": 156, 
+                "h": 200
+            }
+        }, 
+        {
+            "frame": {
+                "y": 0, 
+                "x": 156, 
+                "w": 155, 
+                "h": 200
+            }, 
+            "rotated": false, 
+            "filename": "trump6.png", 
+            "trimmed": false, 
+            "sourceSize": {
+                "h": 200, 
+                "w": 155
+            }, 
+            "spriteSourceSize": {
+                "y": 0, 
+                "x": 156, 
+                "w": 155, 
+                "h": 200
+            }
+        }, 
+        {
+            "frame": {
+                "y": 0, 
+                "x": 311, 
+                "w": 157, 
+                "h": 200
+            }, 
+            "rotated": false, 
+            "filename": "trump5.png", 
+            "trimmed": false, 
+            "sourceSize": {
+                "h": 200, 
+                "w": 157
+            }, 
+            "spriteSourceSize": {
+                "y": 0, 
+                "x": 311, 
+                "w": 157, 
+                "h": 200
+            }
+        }, 
+        {
+            "frame": {
+                "y": 200, 
+                "x": 0, 
+                "w": 168, 
+                "h": 200
+            }, 
+            "rotated": false, 
+            "filename": "trump4.png", 
+            "trimmed": false, 
+            "sourceSize": {
+                "h": 200, 
+                "w": 168
+            }, 
+            "spriteSourceSize": {
+                "y": 200, 
+                "x": 0, 
+                "w": 168, 
+                "h": 200
+            }
+        }, 
+        {
+            "frame": {
+                "y": 200, 
+                "x": 168, 
+                "w": 183, 
+                "h": 200
+            }, 
+            "rotated": false, 
+            "filename": "trump3.png", 
+            "trimmed": false, 
+            "sourceSize": {
+                "h": 200, 
+                "w": 183
+            }, 
+            "spriteSourceSize": {
+                "y": 200, 
+                "x": 168, 
+                "w": 183, 
+                "h": 200
+            }
+        }, 
+        {
+            "frame": {
+                "y": 0, 
+                "x": 468, 
+                "w": 148, 
+                "h": 200
+            }, 
+            "rotated": false, 
+            "filename": "trump2.png", 
+            "trimmed": false, 
+            "sourceSize": {
+                "h": 200, 
+                "w": 148
+            }, 
+            "spriteSourceSize": {
+                "y": 0, 
+                "x": 468, 
+                "w": 148, 
+                "h": 200
+            }
+        }, 
+        {
+            "frame": {
+                "y": 400, 
+                "x": 0, 
+                "w": 152, 
+                "h": 200
+            }, 
+            "rotated": false, 
+            "filename": "trump1.png", 
+            "trimmed": false, 
+            "sourceSize": {
+                "h": 200, 
+                "w": 152
+            }, 
+            "spriteSourceSize": {
+                "y": 400, 
+                "x": 0, 
+                "w": 152, 
+                "h": 200
+            }
+        }
+    ], 
+    "meta": {
+        "hash": "6e43aaff92", 
+        "name": "trump", 
+        "height": 600, 
+        "sprite_path": "trump.png", 
+        "width": 616, 
+        "version": "0.13", 
+        "sprite_filename": "trump.png"
+    }
+}

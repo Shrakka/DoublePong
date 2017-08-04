@@ -1,0 +1,16 @@
+
+@font-face {
+  font-family: 'AmericanCaptain';
+  src: url('AmericanCaptain.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AmericanCaptain';
+  src:  url(AmericanCaptain.woff) format('woff'), url('AmericanCaptain.ttf')  format('truetype'), url('AmericanCaptain.svg#AmericanCaptain') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+

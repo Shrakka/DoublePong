@@ -1,0 +1,40 @@
+{
+  "resources": [
+    "sounds.ogg",
+    "sounds.m4a",
+    "sounds.mp3",
+    "sounds.ac3"
+  ],
+  "spritemap": {
+    "sfx1": {
+      "start": 0,
+      "end": 0.2666893424036281,
+      "loop": false
+    },
+    "sfx2": {
+      "start": 2,
+      "end": 2.5818367346938773,
+      "loop": false
+    },
+    "sfx3": {
+      "start": 4,
+      "end": 5.220249433106575,
+      "loop": false
+    },
+    "sfx4": {
+      "start": 7,
+      "end": 7.77578231292517,
+      "loop": false
+    },
+    "sfx5": {
+      "start": 9,
+      "end": 9.428299319727891,
+      "loop": false
+    },
+    "sfx6": {
+      "start": 11,
+      "end": 11.63031746031746,
+      "loop": false
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+    "frames": [
+        {
+            "frame": {
+                "y": 0, 
+                "x": 0, 
+                "w": 400, 
+                "h": 98
+            }, 
+            "rotated": false, 
+            "filename": "burger.png", 
+            "trimmed": false, 
+            "sourceSize": {
+                "h": 98, 
+                "w": 400
+            }, 
+            "spriteSourceSize": {
+                "y": 0, 
+                "x": 0, 
+                "w": 400, 
+                "h": 98
+            }
+        }, 
+        {
+            "frame": {
+                "y": 0, 
+                "x": 400, 
+                "w": 400, 
+                "h": 98
+            }, 
+            "rotated": false, 
+            "filename": "border.png", 
+            "trimmed": false, 
+            "sourceSize": {
+                "h": 98, 
+                "w": 400
+            }, 
+            "spriteSourceSize": {
+                "y": 0, 
+                "x": 400, 
+                "w": 400, 
+                "h": 98
+            }
+        }
+    ], 
+    "meta": {
+        "hash": "ec71060e9b", 
+        "name": "loadbar", 
+        "height": 98, 
+        "sprite_path": "loadbar.png", 
+        "width": 800, 
+        "version": "0.13", 
+        "sprite_filename": "loadbar.png"
+    }
+}
