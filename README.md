@@ -2,7 +2,7 @@
 DoublePong Game based on Phaser and Typescript
 
 
-![Menu][gameMenu.png]
+![Menu](./gameMenu.png)
 
 ---
 
