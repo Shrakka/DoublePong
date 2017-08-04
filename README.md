@@ -29,3 +29,11 @@ Click outside the game window to pause it
 * npm run build:dev
 * npm run server:dev
 
+--
+
+## Credits
+
+I forgot to credit Unreal_dm for the main game music. Thanks! 
+
+Wake Up America by unreal_dm (c) copyright 2011 Licensed under a Creative Commons Attribution Noncommercial  (3.0) license. http://dig.ccmixter.org/files/unreal_dm/34041 Ft: spinningmerkaba
+
